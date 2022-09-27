@@ -1,0 +1,50 @@
+
+.contact {
+    position: relative;
+    padding: 50px;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+
+    background: var(--contrast-color);
+}
+
+.contact .container {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* padding-top: 50px; */
+    /* padding-bottom: 50px; */
+}
+
+.contact h1 {
+    margin: 0;
+    text-align: center;
+    font-weight: 50;
+    font-size: 40px;
+    color: var(--text-color-white);
+}
+
+.contact p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    color: var(--text-color-white);
+}
+
+.contact .form-control {
+    background: var(--background-color-secondary);
+    color: var(--text-color-primary);
+}
+
+.contact button {
+    background-color: var(--button-primary-color);
+}
+.contact button:hover {
+    background-color: var(--button-primary-color-hover);
+}

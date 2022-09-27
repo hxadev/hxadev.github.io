@@ -1,0 +1,252 @@
+.social {
+    position: fixed;
+    left: 0;
+    top: 200px;
+    z-index: 1;
+}
+
+.social ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.social ul li a {
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    border-radius: 0 20px 20px 0;
+}
+
+.social ul li .icon-facebook {
+    background: #3b5998;
+}
+
+.social ul li .icon-linkedin {
+    background: #0e76ab;
+}
+.social ul li .icon-instagram {
+    background: #f77737;
+}
+.social ul li .icon-mail {
+    background: #666666;
+}
+
+.social ul li a:hover {
+    background: var(#ffff);
+    padding: 10px 30px;
+    color: var(--text-color-primary);
+    border-radius: 0 20px 20p 0;
+}
+
+.config-panel {
+    background: var(--background-color-secondary);
+    height: auto;
+    width: 150px;
+    border-radius: 25px 0 0 25px;
+    position: fixed;
+    right: -150px;
+    top: 15px;
+    z-index: 6;
+    transition: all 0.5s ease-in-out;
+}
+
+.config-panel .panel-inner {
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    color: var(--text-color-primary);
+}
+
+.config-panel .panel-inner h4 {
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.config-panel .panel-inner .config-button {
+    background: var(--background-color-secondary);
+    color: var(--text-color-primary);
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    padding-top: 3px;
+    top: 30px;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px 0 0 10px;
+    transition: all 0.5s;
+}
+
+.config-panel .panel-inner .config-button:hover {
+    background: var(--background-color-degree-hover);
+    cursor: pointer;
+}
+
+.config-panel .chooseLanguage {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2px;
+}
+
+.config-panel .chooseLanguage li {
+    margin-left: 5px;
+}
+
+.config-panel .chooseLanguage li a:hover {
+    -webkit-opacity: 0.9;
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    border: 2px solid var(--background-color-secondary);
+}
+
+.config-panel .chooseColor {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2px;
+}
+
+.config-panel .chooseColor li {
+    margin-left: 5px;
+}
+
+.config-panel .chooseColor li a {
+    height: 65%;
+}
+
+.chooseColor {
+    margin-bottom: 0px;
+}
+.config-panel .chooseColor li a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+    margin-top: 5px;
+}
+.config-panel .chooseColor li a:hover {
+    -webkit-opacity: 0.9;
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    border: 2px solid var(--background-color-secondary);
+}
+.config-panel .chooseColor li.list-inline-item {
+    margin-right: 5px;
+}
+.config-panel .chooseColor li.active a {
+    border: 2px solid #fff;
+}
+.config-panel .chooseColor li.theme-1 a {
+    background: #54b689;
+}
+.config-panel .chooseColor li.theme-2 a {
+    background-color: #0083ab;
+}
+.config-panel .chooseColor li.theme-3 a {
+    background-color: #5469c9;
+}
+.config-panel .chooseColor li.theme-4 a {
+    background-color: #43b32c;
+}
+.config-panel .chooseColor li.theme-5 a {
+    background-color: #eea73b;
+}
+.config-panel .chooseColor li.theme-6 a {
+    background-color: #6c51a4;
+}
+.config-panel .chooseColor li.theme-7 a {
+    background-color: #5d6ba7;
+}
+.config-panel .chooseColor li.theme-8 a {
+    background-color: #6c51a4;
+}
+.config-panel .chooseColor li.theme-9 a {
+    background-color: #d67553;
+}
+.config-panel .chooseColor li.theme-10 a {
+    background-color: #5fcb71;
+}
+
+.responsive-button {
+    position: relative;
+    width: auto;
+    top: 14px;
+    font-size: 24px;
+    text-align: end;
+    right: 11px;
+    cursor: pointer;
+    color: var(--text-color-white);
+    display: none;
+}
+
+/* Button Switch Dark Mode or White Mode */
+.switch-button {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch-button input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch-button .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.switch-button .slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--background-color-primary);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.switch-button input:checked + .slider {
+    background-color: var(--contrast-color-secondary);
+}
+
+.switch-button input:focus + .slider {
+    box-shadow: 0 0 1px var(--dark-mode-identifier);
+}
+
+.switch-button input:checked + .slider::before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.switch-button .slider.round {
+    border-radius: 34px;
+}
+
+.switch-button .slider.round:before {
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 620px) {
+    .responsive-button {
+        display: block;
+    }
+}
+

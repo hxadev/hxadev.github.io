@@ -1,0 +1,40 @@
+.footer {
+    position: relative;
+    padding: 40px;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+
+    background: var(--footer-color);
+}
+
+.footer .container {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--text-color-white);
+    font-size: 10px;
+    /* padding-top: 50px; */
+    /* padding-bottom: 50px; */
+}
+
+.footer .container a {
+    color: var(--contrast-color);
+}
+
+.footer .container #logo {
+    width: 140px;
+}
+
+.footer .container .col-footer::nth-child(0) {
+    border-right: 1px solid var(--contrast-color);
+}
+
+.footer .container .menu h4 {
+    font-size: 15px;
+    font-weight: 800;
+}
+

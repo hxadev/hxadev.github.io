@@ -1,0 +1,37 @@
+.phrase.lazy-background {
+    background-image: var(--background-color-secondary);
+}
+.phrase.lazy-background.visible {
+    background-image: linear-gradient(
+            rgba(60, 60, 60, 0.8) 20%,
+            rgba(107, 107, 107, 0.8) 60%
+        ),
+        url("./../img/principal/phrase/phrase.jpg");
+}
+
+.phrase.parallax {
+    height: 20em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.phrase .text {
+    padding-top: 90px;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+    font-size: 1.5em;
+    font-style: italic;
+    color: white;
+    /* text-shadow: 5px 4px 9px black; */
+}
+
+.phrase .author {
+    text-align: right;
+    padding-top: 18px;
+    padding-right: 100px;
+    color: #fff;
+    font-size: 1.2em;
+}

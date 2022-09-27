@@ -1,0 +1,9 @@
+@import "./../../node_modules/normalize.css/normalize.css";
+@import "./../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "./../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "./../../node_modules/devicon/devicon.min.css";
+@import "./../../node_modules/aos/dist/aos.css";
+@import "./../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css";
+
+
+@import "./main.css"; /* <=== This is the main style of the page. */
